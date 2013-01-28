@@ -33,4 +33,5 @@ task :default => "xpkg/xpkg.exe" do
 	puts "* Creating #{COMPONENT}..."
 	puts line.strip.gsub "\t\t", "\\\n    "
 	sh line, :verbose => false
+	puts "* Created #{COMPONENT}"
 end
