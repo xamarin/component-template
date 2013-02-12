@@ -8,7 +8,7 @@ COMPONENT = "sample-component-1.0.xam"
 file "xpkg/xpkg.exe" do
 	puts "* Downloading xpkg..."
 	mkdir "xpkg"
-	sh "curl -LO https://dl.dropbox.com/u/217582/xamarin/component-store/xpkg.zip"
+	sh "curl -L https://components.xamarin.com/submit/xpkg > xpkg.zip"
 	sh "unzip -o xpkg.zip -d xpkg"
 	sh "rm xpkg.zip"
 end
