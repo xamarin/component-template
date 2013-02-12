@@ -4,7 +4,7 @@ To build this sample component:
 
 ```shell
 # Download xpkg
-curl -O https://dl.dropbox.com/u/217582/xamarin/component-store/xpkg.zip
+curl -L https://components.xamarin.com/submit/xpkg > xpkg.zip
 mkdir xpkg
 unzip -o -d xpkg xpkg.zip
 
