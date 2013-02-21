@@ -1,5 +1,8 @@
 # Xamarin Component Sample
 
+This is a sample template that you can use as a guide to create your own
+components.
+
 To build this sample component:
 
 ```shell
