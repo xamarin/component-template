@@ -3,7 +3,7 @@ require "rake/clean"
 CLEAN.include "*.xam"
 CLEAN.include "xpkg"
 
-COMPONENT = "sample-component-1.0.xam"
+COMPONENT = "awesome-1.0.xam"
 
 file "xpkg/xpkg.exe" do
 	puts "* Downloading xpkg..."
@@ -23,8 +23,8 @@ task :default => "xpkg/xpkg.exe" do
 		--details="Details.md" \
 		--license="License.md" \
 		--getting-started="GettingStarted.md" \
-		--icon="icons/Awesome_128x128.png" \
-		--icon="icons/Awesome_512x512.png" \
+		--icon="icons/awesome_128x128.png" \
+		--icon="icons/awesome_512x512.png" \
 		--library="ios":"bin/Awesome.iOS.dll" \
 		--library="android":"bin/Awesome.Android.dll" \
 		--sample="iOS Sample. Demonstrates Awesomeness on iOS.":"samples/Awesome.iOS.sln" \
