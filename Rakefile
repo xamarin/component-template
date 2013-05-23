@@ -1,21 +1,21 @@
 require "rake/clean"
 
 CLEAN.include "*.xam"
-CLEAN.include "xpkg"
+CLEAN.include "xamarin-component"
 
 COMPONENT = "awesome-1.0.xam"
 
-file "xpkg/xpkg.exe" do
-	puts "* Downloading xpkg..."
-	mkdir "xpkg"
-	sh "curl -L https://components.xamarin.com/submit/xpkg > xpkg.zip"
-	sh "unzip -o xpkg.zip -d xpkg"
-	sh "rm xpkg.zip"
+file "xamarin-component/xamarin-component.exe" do
+	puts "* Downloading xamarin-component..."
+	mkdir "xamarin-component"
+	sh "curl -L https://components.xamarin.com/submit/xpkg > xamarin-component.zip"
+	sh "unzip -o xamarin-component.zip -d xamarin-component"
+	sh "rm xamarin-component.zip"
 end
 
-task :default => "xpkg/xpkg.exe" do
+task :default => "xamarin-component/xamarin-component.exe" do
 	line = <<-END
-	mono xpkg/xpkg.exe create #{COMPONENT} \
+	mono xamarin-component/xamarin-component.exe create-manually #{COMPONENT} \
 		--name="My Awesome Component" \
 		--summary="Add a huge amount of awesomeness to your Xamarin apps." \
 		--publisher="Awesome Corp, Inc." \
