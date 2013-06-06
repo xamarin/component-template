@@ -35,7 +35,7 @@ simply type `rake`:
 $ rake
 * Downloading xpkg...
 * Creating sample-component-1.0.xam...
-mono xpkg/xpkg.exe create sample-component-1.0.xam \
+mono xpkg/xamarin-component.exe create sample-component-1.0.xam \
     --name="My Awesome Component" \
     --summary="Add a huge amount of awesomeness to your Xamarin apps." \
     --publisher="Awesome Corp, Inc." \
