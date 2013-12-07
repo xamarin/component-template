@@ -9,7 +9,7 @@ file "xamarin-component/xamarin-component.exe" do
 	puts "* Downloading xamarin-component..."
 	mkdir "xamarin-component"
 	sh "curl -L https://components.xamarin.com/submit/xpkg > xamarin-component.zip"
-	sh "unzip -o xamarin-component.zip -d xamarin-component"
+	sh "unzip -o -q xamarin-component.zip -d xamarin-component"
 	sh "rm xamarin-component.zip"
 end
 
